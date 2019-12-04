@@ -162,7 +162,7 @@ func main() {
 		log.Println("Connection Established")
 	}
 
-	// db.AutoMigrate(&Booking{})
+	db.AutoMigrate(&Booking{})
 	handleRequests()
 
 }
